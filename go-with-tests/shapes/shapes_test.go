@@ -12,6 +12,10 @@ func TestPerimeter(t *testing.T) {
     }
 }
 
+type Shape interface {
+    Area() float64
+}
+
 func TestArea(t *testing.T) {
 
     areaTests := []struct {
